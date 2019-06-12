@@ -1,0 +1,74 @@
+<div class="wrapper">
+
+  <!-- Início do header -->
+  <header class="main-header">
+    <nav class="navbar navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <a class="navbar-brand"><b>FindFitness</b></a>
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+            <i class="fa fa-bars"></i>
+          </button>
+        </div>
+  
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse pull-left" id="navbar-collapse">
+          <ul class="nav navbar-nav">
+              <!-- <li class="active"><a href="#">Restaurantes</a></li> -->
+              <li><a href="#">Sobre</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+  
+      </div>
+    </nav>
+    </header>
+    
+  <!-- Fim do header -->
+
+  <!-- Full Width Column -->
+  <div class="content-wrapper">
+    <div class="container">
+      <!-- {{content}} -->
+
+      <section class="content login-content" style="margin: 10% auto">
+  		  <div class="login-logo">
+  			     <b>FindFitness</b> | Login
+  		  </div>
+  		  <div class="col-xs-12 col-sm-offset-3 col-sm-6 login-box-body">
+  			<p class="login-box-msg">Por favor, efetue o login para continuar</p>
+
+  			<form>
+  			  <div class="form-group has-feedback">
+  				      <input [(ngModel)]="creds.email" name="email" type="email" class="form-control" placeholder="Email">
+  				      <span class="glyphicon glyphicon-envelope form-control-feedback"></span>
+  			  </div>
+  			  <div class="form-group has-feedback">
+  				      <input [(ngModel)]="creds.password" name="password" type="password" class="form-control" placeholder="Password">
+  				      <span class="glyphicon glyphicon-lock form-control-feedback"></span>
+  			  </div>
+  			  <div class="row">
+  				<!-- /.col -->
+  				<div class="col-xs-offset-8 col-xs-4">
+  				  <button type="submit" (click)="login()" class="btn btn-primary btn-block btn-flat">Entrar</button>
+  				</div>
+  				<!-- /.col -->
+  			  </div>
+  			</form>
+  		  </div>
+		  </section>
+
+    </div>
+  </div>
+
+  <!-- snakbar deve ser aqui -->
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="pull-right hidden-xs">
+        <b>Version</b> 1.0.0
+      </div>
+      <strong>FindFitness</strong> Oxentech Application
+    </div>
+  </footer>
+</div>
